@@ -1,0 +1,15 @@
+@import '../../styles/mixins.scss'; 
+
+.listWrapper {
+    @include flexbox;
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+
+    .singleItem {
+        @include flexbox;
+        @include flex(0, 0, 200px);
+        margin: 10px;
+        background-image: url('https://openclipart.org/image/300px/svg_to_png/194077/Placeholder.png');
+        background-size: cover;
+    }
+}

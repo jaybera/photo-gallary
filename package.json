@@ -1,0 +1,27 @@
+{
+  "name": "albums-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "next": "14.1.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.74.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.4",
+    "@testing-library/react": "^14.2.2",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.1.4",
+    "jest": "^29.7.0",
+    "jest-dom": "^4.0.0"
+  }
+}
