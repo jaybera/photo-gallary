@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../../styles/global.module.scss';
 
 const PhotoList = ({ albumId }) => {
   const [photos, setPhotos] = useState([]);
@@ -24,9 +23,9 @@ const PhotoList = ({ albumId }) => {
   }, [albumId]);
 
   return (
-    <div className={styles.listWrapper}>
+    <div className="listWrapper">
       {photos.map(photo => (
-        <div className={styles.singleItem} key={photo.id}><img width={200} height={200} src={photo.url} /></div>
+        <div className="singleItem" key={photo.id}><img width={200} height={200} src={photo.url} /></div>
       ))}
     </div>
   );

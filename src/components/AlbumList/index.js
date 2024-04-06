@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../../styles/global.module.scss';
 
 const AlbumList = ({ userId }) => {
   const [albums, setAlbums] = useState([]);
@@ -23,11 +22,9 @@ const AlbumList = ({ userId }) => {
 		// 		.then((data) => setAlbums(data));
   }, [userId]);
 
-  console.log("albums ::", albums);
-
 
   return (
-    <ul className={styles.albumList}>
+    <ul className='albumList'>
       {albums.map(album => (
         <li key={album.id}>
           <a href={`/album/${album.id}`}>{album.title}</a>

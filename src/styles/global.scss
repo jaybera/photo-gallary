@@ -1,0 +1,64 @@
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: block;
+}
+.pageHeadingCenter {
+  text-align: center;
+}
+
+// UserList mosule scss
+.userList {
+  a {
+    color: blue;
+
+    &:hover,
+    &:focus,
+    &:visited {
+      color: blue;
+    }
+  }
+}
+
+// AlbumList module scss
+.albumList {
+  a {
+    color: blue;
+
+    &:hover,
+    &:focus,
+    &:visited {
+      color: blue;
+    }
+  }
+}
+
+// PhotoList module scss
+.listWrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+
+  .singleItem {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex: 0 0 200px;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    margin: 10px;
+    background-image: url('https://openclipart.org/image/300px/svg_to_png/194077/Placeholder.png');
+    background-size: cover;
+  }
+}

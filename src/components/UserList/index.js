@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../../styles/global.module.scss';
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
@@ -20,7 +19,7 @@ const UserList = () => {
   }, []);
 
   return (
-    <div className={styles.userList}>
+    <div className="userList">
       <ul>
         {users.map(user => (
           <li key={user.id}>
