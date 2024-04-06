@@ -1,11 +1,9 @@
 ## Customise instruction
-first do installtion
+## Follow below commands for basic setup and run application
 
-npm install
+1. npm install
 
-after that
-
-npm run dev
+2. npm run dev
 
 ============================================
 
