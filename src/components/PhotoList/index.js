@@ -5,27 +5,30 @@ const PhotoList = ({ albumId }) => {
 
   const getPhotoList = async (albumId) => {
     try {
-      const response = await fetch(`https://jsonplaceholder.typicode.com/photos?albumId=${albumId}`);
+      const response = await fetch(
+        `https://jsonplaceholder.typicode.com/photos?albumId=${albumId}`
+      );
       const data = await response.json();
 
       setPhotos(data);
-    } catch(error){
+    } catch (error) {
       console.log(error);
     }
-    
-  }
+  };
 
   useEffect(() => {
     // fetch(`https://jsonplaceholder.typicode.com/photos?albumId=${albumId}`)
     // 	.then((response) => response.json())
-		// 	.then((data) => setPhotos(data))
-    getPhotoList(albumId);
+    // 	.then((data) => setPhotos(data))
+    if (albumId) getPhotoList(albumId);
   }, [albumId]);
 
   return (
     <div className="listWrapper">
-      {photos.map(photo => (
-        <div className="singleItem" key={photo.id}><img width={200} height={200} src={photo.url} /></div>
+      {photos.map((photo) => (
+        <div className="singleItem" key={photo.id}>
+          <img width={200} height={200} src={photo.url} />
+        </div>
       ))}
     </div>
   );
